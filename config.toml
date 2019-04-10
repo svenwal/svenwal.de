@@ -1,0 +1,57 @@
+baseurl = "https://svenwal.de/"
+title = "SvenWal"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+enableEmoji=true
+
+[taxonomies]
+  series = "series"
+
+[params]
+    author = "SvenWal"
+    avatar = "avatar.png"
+    favicon = "favicon.ico"
+    description = """
+        SvenWal is my nick since the 90s.
+        Find here all my social media stufff as well as my new primary blog.
+    """
+    publicationYear = "2019"
+    listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    singlePageDateFormat = "January 2, 2006"
+
+    # custom_css = ["/css/custom.css"]
+    # custom_js = ["/js/custom.js"]
+
+[outputs]
+    section = ["JSON", "HTML"]
+
+[[menu.main]]
+    name = "Blog"
+    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "/blog/"
+    weight = 10
+
+[[menu.main]]
+    name = "Twitter"
+    pre = "<i class='fab fa-twitter fa-lg'></i>"
+    url = "https://twitter.com/svenwal"
+    weight = 20
+
+[[menu.main]]
+    name = "GitHub"
+    pre = "<i class='fab fa-github fa-lg'></i>"
+    url = "https://github.com/svenwal"
+    weight = 30
+
+[[menu.main]]
+    name = "Instagram"
+    pre = "<i class='fab fa-instagram fa-lg'></i>"
+    url = "https://www.instagram.com/svenwal/"
+    weight = 40
+
+[[menu.main]]
+    name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    url = "mailto:sven@svenwal.de"
+    weight = 50
