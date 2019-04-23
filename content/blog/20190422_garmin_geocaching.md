@@ -1,5 +1,5 @@
 ---
-title: "Goecaching with Garmin - a must have?"
+title: "Geocaching with Garmin - a must have?"
 date: 2019-04-22
 draft: false
 ---
