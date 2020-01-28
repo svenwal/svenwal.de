@@ -1,6 +1,6 @@
 baseurl = "https://svenwal.de/"
 title = "SvenWal"
-theme = "pulp"
+theme = "pulp-solarized"
 canonifyurls = true
 hasCJKLanguage = true
 enableEmoji=true
