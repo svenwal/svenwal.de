@@ -6,7 +6,8 @@ hasCJKLanguage = true
 enableEmoji=true
 
 [taxonomies]
-  series = "series"
+  category = "categories"
+  tag = "tags"
 
 [params]
     author = "SvenWal"
@@ -16,15 +17,18 @@ enableEmoji=true
         SvenWal is my nick since the 90s.
         Find here all my social media stufff as well as my new primary blog.
     """
-    publicationYear = "2019"
-    listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    publicationYear = "2020"
+    listPageDateFormat = "January 2006" # See https://gohugo.io/functions/format/
     singlePageDateFormat = "January 2, 2006"
+
+    enableEmoji = true
 
     # custom_css = ["/css/custom.css"]
     # custom_js = ["/js/custom.js"]
 
 [outputs]
     section = ["JSON", "HTML"]
+    taxonomy = ["JSON", "HTML"]
 
 [[menu.main]]
     name = "Blog"
