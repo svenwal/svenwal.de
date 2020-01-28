@@ -4,6 +4,7 @@ theme = "pulp"
 canonifyurls = true
 hasCJKLanguage = true
 enableEmoji=true
+pygmentsStyle = "solarized-dark"
 
 [taxonomies]
   category = "categories"
