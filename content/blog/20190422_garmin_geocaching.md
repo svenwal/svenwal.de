@@ -2,6 +2,11 @@
 title: "Geocaching with Garmin - a must have?"
 date: 2019-04-22
 draft: false
+tags: [
+    "Garmin",
+    "Geocaching",
+    "GPS"
+]
 ---
 I am a casual [geocacher](https://www.geocaching.com/play) now since more than 5 years and ever since I started I have wondered if a dedicated [GPS](https://en.wikipedia.org/wiki/Global_Positioning_System) device wouldn't be the better option than using an iPhone. The most obvious feature I've been missing is accurancy of my current location. Depending on my iPhone generation and the nature around me (trees, rocks, ...) there are easily some meters difference between location on screen and location in reality.
 

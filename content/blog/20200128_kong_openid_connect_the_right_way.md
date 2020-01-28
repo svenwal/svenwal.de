@@ -2,11 +2,9 @@
 title: "Using OpenID Connect the right way with Kong Enterprise"
 date: 2020-01-28
 draft: false
-categories:
-- Kong
 tags: [
     "Kong",
-    "Enterprise",
+    "Kong Enterprise",
     "OpenID Connect",
     "JWT",
     "Best practises"

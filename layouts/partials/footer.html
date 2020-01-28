@@ -1,0 +1,8 @@
+<footer>
+  <p>
+  &copy; {{ .Site.Params.publicationYear }} Sven Walther - <a href=/impressum>Impressum</a>
+  </p>
+</footer>
+{{- range .Site.Params.custom_js -}}
+<script src="{{ . }}"></script>
+{{ end }}

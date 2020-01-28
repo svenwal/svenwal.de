@@ -2,6 +2,13 @@
 title: "New Kong Plugin: Inject Errors"
 date: 2019-04-10
 draft: false
+tags: [
+    "Kong",
+    "Plugins",
+    "Lua",
+    "Chaos Engineering",
+    "Open Source"
+]
 ---
 As some of you might know already I have joined the awesome API Gateway vendor [Kong](https://konghq.com) this year. You have to check out our [open source lightweight and ultra-fast API gateway](https://github.com/kong) when you are somewhere in the API Management / Microservices / Service Mesh space.
 
