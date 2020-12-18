@@ -7,7 +7,7 @@ tags: [
     "Kong Enterprise",
     "OpenID Connect",
     "JWT",
-    "Best practises"
+    "Best practices"
 ]
 ---
 ## One tool to rule them all?
@@ -120,6 +120,10 @@ Last but not least let's have a look at the JWT for `Blog_with_scope` which incl
 
 ## Outlook
 
-The above scenario is great for the binary decision on access yes/no. You might wonder how you can now add consumer specific settings (rate limiting to just mention a very common one). There are multiple ways to achieve this (once again creating shadow consumers per user, having consumers as groups or using a header) but this is out of scope of today's blog post (which is already longer than it should be).
+The Outlook has become true: Find [another blog post in this Kong series on how to use JWT claims and rate-limiting here](/blog/20200810_kong_jwt_rate_limiting/).
 
-Just [drop me an email, a Twitter mention or however you want to reach out to me](/) and if I get enough requests I'll add a second blog post about this and will link it here.
+### Original Outlook:
+
+> The above scenario is great for the binary decision on access yes/no. You might wonder how you can now add consumer specific settings (rate limiting to just mention a very common one). There are multiple ways to achieve this (once again creating shadow consumers per user, having consumers as groups or using a header) but this is out of scope of today's blog post (which is already longer than it should be).
+> 
+> Just [drop me an email, a Twitter mention or however you want to reach out to me](/) and if I get enough requests I'll add a second blog post about this and will link it here.

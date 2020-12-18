@@ -29,7 +29,7 @@ pygmentsStyle = "solarized-dark"
 
 [outputs]
     section = ["JSON", "HTML"]
-    taxonomy = ["JSON", "HTML"]
+    #taxonomy = ["JSON", "HTML"]
 
 [[menu.main]]
     name = "Blog"
