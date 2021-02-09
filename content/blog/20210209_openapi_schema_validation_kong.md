@@ -14,7 +14,7 @@ tags: [
 
 ## What are we talking about?
 
-Ever since API gateway have been available there has been the use case to validate incoming requests against a schema. In the "good old times" of [SOA](https://en.wikipedia.org/wiki/Service-oriented_architecture)/[SOAP](https://en.wikipedia.org/wiki/SOAP)/[WSDL](https://en.wikipedia.org/wiki/Web_Services_Description_Language) the protocol itself was created from scratch with this being a use case so validating a SOAP request was very common.
+Ever since API gateways have been available there has been the use case to validate incoming requests against a schema. In the "good old times" of [SOA](https://en.wikipedia.org/wiki/Service-oriented_architecture)/[SOAP](https://en.wikipedia.org/wiki/SOAP)/[WSDL](https://en.wikipedia.org/wiki/Web_Services_Description_Language) the protocol itself was created from scratch with this being a use case so validating a SOAP request was very common.
 
 In the world of [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)/[JSON](https://en.wikipedia.org/wiki/JSON) the world has been much more agile with people just using this concept and only later such things as a schema were put on top. This would be fine if we nowadays would have one standard. But in real world we still have two - being close to each other but still not 100% compatible / feature rich.
 
