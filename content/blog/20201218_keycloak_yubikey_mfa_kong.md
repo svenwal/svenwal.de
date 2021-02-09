@@ -33,7 +33,7 @@ But if we want to use it with a [WebAuthn](https://webauthn.io/) hardware token 
 
 Let's imagine you have already gotten your certificate and private key (see [Certbot](https://certbot.eff.org/)) - now we want to make our Keycloak using those files. I can tell you I have read and tried so many tutorials (invoking `keytool`, converting types, ...) while in the end it is very easy - if you know about the permissions. So all credits to [to this answer on stackoverflow](https://stackoverflow.com/a/61902931).
 
-My docker-compose gets the following addtions:
+My docker-compose gets the following additions:
 
 ```YAML
   volumes:
