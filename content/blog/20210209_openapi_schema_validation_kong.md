@@ -46,7 +46,7 @@ Great - this tool also is able to apply plugins so we can use the Request Valida
 
 ## OpenAPI in Kong to validate URLs and http methods
 
-But now the major question: how do we generate this YAML file if we "only" have an OpenAPI specification? The answer is another great tool provided by Kong: [Insomnia](https://insomnia.rest/). Insomnia is known to many as being a great editor and testing tool for OpenAPI specs on the desktop and if you have attached the Kong Plugin Bundled it even comes with a button to export the OpenAPI as Kong YAML.
+But now the major question: how do we generate this YAML file if we "only" have an OpenAPI specification? The answer is another great tool provided by Kong: [Insomnia](https://insomnia.rest/). Insomnia is known to many as being a great editor and testing tool for OpenAPI specs on the desktop and if you have attached the [Kong Plugin Bundle](https://insomnia.rest/plugins/insomnia-plugin-kong-bundle) it even comes with a button to export the OpenAPI as Kong YAML.
 
 So we are very close - but didn't I speak about automation? So the great news is you can use the same functionality on the command line use the [cli version of Insomnia called inso](https://support.insomnia.rest/collection/105-inso-cli). 
 
