@@ -10,19 +10,19 @@ tags: [
 ]
 ---
 
-**TL;DR**: just have a look at the last paragraph "All-in-one-go example"
+**TL;DR**: have a look at the last paragraph "All-in-one-go example"
 
 ## What are we talking about?
 
 Ever since API gateways have been available there has been the use case to validate incoming requests against a schema. In the "good old times" of [SOA](https://en.wikipedia.org/wiki/Service-oriented_architecture)/[SOAP](https://en.wikipedia.org/wiki/SOAP)/[WSDL](https://en.wikipedia.org/wiki/Web_Services_Description_Language) the protocol itself was created from scratch with this being a use case so validating a SOAP request was very common.
 
-In the world of [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)/[JSON](https://en.wikipedia.org/wiki/JSON) the world has been much more agile with people just using this concept and only later such things as a schema were put on top. This would be fine if we nowadays would have one standard. But in real world we still have two - being close to each other but still not 100% compatible / feature rich.
+In the world of [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)/[JSON](https://en.wikipedia.org/wiki/JSON) the world has been much more agile with people using this concept and only later such things as a schema were put on top. This would be fine if we nowadays would have one standard. But in real world we still have two - being close to each other but still not 100% compatible / feature rich.
 
 As first we do have the winner of the REST API documentation wars from last decade where [WADL](https://en.wikipedia.org/wiki/Web_Application_Description_Language#:~:text=The%20Web%20Application%20Description%20Language,HTTP%20architecture%20of%20the%20Web.), [Blueprint](https://apiblueprint.org/), [RAML](https://en.wikipedia.org/wiki/RAML_(software)) and [Swagger](https://en.wikipedia.org/wiki/Swagger_(software)) have been the four major standards fighting for becoming the overall standard. Long story short (this could be an own and very long blog post...) the clear winner is Swagger - nowadays called [OpenAPI](https://en.wikipedia.org/wiki/OpenAPI_Specification). Only a few [Gallic villages](https://en.wikipedia.org/wiki/Asterix) are still using the "old" standards.
 
 On the other hand we do have [JSON Schema](https://json-schema.org/) which has been more focused on describing - well, the name already tells us - a schema on a JSON object. This has been seen as the better language for validating requests as the standard is more powerful on this scenario.
 
-Both of them a getting closer and closer (the end result should be a 100% JSON Schema compliant OpenAPI spec) but as of early 2021 we are not there yet. I don't want to put any "a is better than b" in this post - this is just a description of current state.
+Both of them a getting closer and closer (the end result should be a 100% JSON Schema compliant OpenAPI spec) but as of early 2021 we are not there yet. I don't want to put any "a is better than b" in this post - this is only a description of current state.
 
 ## Request validation in Kong Enterprise
 
@@ -153,8 +153,6 @@ HTTP/1.1 400 Bad Request
 }
 ```
 
-Slaves
-
 Done :)
 
 ## All-in-one-go example
@@ -167,4 +165,4 @@ Find an example OpenAPI specification at <https://github.com/svenwal/uuid-genera
 > deck sync --select-tag openapi-validated -s my-kong-yaml-file.yaml
 ```
 
-You see a very long story but in the end extremely easy and perfect for automation.
+You see a very long story but in the end extremely straightforward and perfect for automation.
