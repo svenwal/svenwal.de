@@ -26,7 +26,7 @@ Both of them a getting closer and closer (the end result should be a 100% JSON S
 
 ## Request validation in Kong Enterprise
 
-When looking the [Kong Plugins hub](https://docs.konghq.com/hub/) we can spot an enterprise plugin called [Request Validator](https://docs.konghq.com/hub/kong-inc/request-validator/) which not only sounds promissing but out of the box solves our use case of request validation based on a JSON Schema.
+When looking the [Kong Plugins hub](https://docs.konghq.com/hub/) we can spot an enterprise plugin called [Request Validator](https://docs.konghq.com/hub/kong-inc/request-validator/) which not only sounds promising but out of the box solves our use case of request validation based on a JSON Schema.
 
 Nevertheless a huge trend in the REST/JSON api economy is right now to put all configuration, validations and documentation in one single file - the OpenAPI description.
 
@@ -48,7 +48,7 @@ Great - this tool also is able to apply plugins so we can use the Request Valida
 
 But now the major question: how do we generate this YAML file if we "only" have an OpenAPI specification? The answer is another great tool provided by Kong: [Insomnia](https://insomnia.rest/). Insomnia is known to many as being a great editor and testing tool for OpenAPI specs on the desktop and if you have attached the [Kong Plugin Bundle](https://insomnia.rest/plugins/insomnia-plugin-kong-bundle) it even comes with a button to export the OpenAPI as Kong YAML.
 
-So we are very close - but didn't I speak about automation? So the great news is you can use the same functionality on the command line use the [cli version of Insomnia called inso](https://support.insomnia.rest/collection/105-inso-cli). 
+So we are very close - but didn't I speak about automation? So the great news is you can use the same functionality on the command line use the [cli version of Insomnia called inso](https://support.insomnia.rest/collection/105-inso-cli).
 
 ```bash
 inso generate config ./myOpenAPIspec.yaml -o my-kong-yaml-file.yaml
@@ -153,6 +153,8 @@ HTTP/1.1 400 Bad Request
 }
 ```
 
+Slaves
+
 Done :)
 
 ## All-in-one-go example
@@ -160,9 +162,9 @@ Done :)
 Find an example OpenAPI specification at <https://github.com/svenwal/uuid-generator-service/blob/main/uuid-generator.yaml> and you can use [inso cli](https://support.insomnia.rest/collection/105-inso-cli) and [decK](https://docs.konghq.com/deck/) like this:
 
 ```bash
-$ inso generate config ./uuid-generator.yaml -o my-kong-yaml-file.yaml
+> inso generate config ./uuid-generator.yaml -o my-kong-yaml-file.yaml
 
-$ deck sync --select-tag openapi-validated -s my-kong-yaml-file.yaml
+> deck sync --select-tag openapi-validated -s my-kong-yaml-file.yaml
 ```
 
 You see a very long story but in the end extremely easy and perfect for automation.
