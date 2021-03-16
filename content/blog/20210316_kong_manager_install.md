@@ -73,7 +73,7 @@ And now it works.
 
 ## Enabling RBAC and logging in not possible
 
-When using Kong Enterprise you typically want to secure your Admin-API and the Kong Manager using RBAC. Let's assume you have set everything up for `basic-auth` and the `Kong-Admin-Token`-header works fine on the admin API. But when opening the browser and logging in there (hint: the standard username is `kong_admin` if you have set the password during bootstrap) it does not work.
+When using Kong Enterprise you typically want to secure your Admin-API and the Kong Manager using [RBAC](https://docs.konghq.com/enterprise/2.3.x/kong-manager/authentication/super-admin/). Let's assume you have set everything up for `basic-auth` and the `Kong-Admin-Token`-header works fine on the admin API. But when opening the browser and logging in there (hint: the standard username is `kong_admin` if you have set the password during bootstrap) it does not work.
 
 Given our example from above what happens now is that the login itself works fine - only the created session cookie is not valid for both domains (you log in at <https://kong-manager.my-company.example.com> and the cookie will only be valid for the UI - not the Admin-API).
 
@@ -95,7 +95,7 @@ Hint: I have also added `cookie_secure` to this example even so you won't needed
 
 ## Developer Portal
 
-Now that we have learned a lot about major principles for this API based user interfaces we can be very quick with the developer portal as it shares the accepts same principles (a web based user interface and an API) so we have to do similar things to get this to work:
+Now that we have learned a lot about major principles for this API based user interfaces we can be very quick with the [developer portal](https://docs.konghq.com/enterprise/2.3.x/developer-portal/) as it shares the accepts same principles (a web based user interface and an API) so we have to do similar things to get this to work:
 
 ```config
 portal_gui_protocol = https
