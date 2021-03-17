@@ -16,7 +16,7 @@ pygmentsStyle = "solarized-dark"
     favicon = "favicon.ico"
     description = """
         SvenWal is my nick since the 90s.
-        Find here all my social media stufff as well as my new primary blog.
+        Find here all my social media stufff as well as my primary blog.
     """
     publicationYear = "2021"
     listPageDateFormat = "January 2006" # See https://gohugo.io/functions/format/
@@ -33,7 +33,7 @@ pygmentsStyle = "solarized-dark"
 
 [[menu.main]]
     name = "Blog"
-    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
+    pre = "<i class='fas fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
     url = "/blog/"
     weight = 10
 
@@ -57,6 +57,6 @@ pygmentsStyle = "solarized-dark"
 
 [[menu.main]]
     name = "Email"
-    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    pre = "<i class='fas fa-envelope fa-lg'></i>"
     url = "mailto:sven@svenwal.de"
     weight = 50
