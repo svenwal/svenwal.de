@@ -91,11 +91,11 @@ KONG_ADMIN_GUI_SESSION_CONF = {"cookie_domain":"my-company.example.com","secret"
 
 The important part here is in `cookie_domain` which needs to be set to the subdomain both of your URLs have in common - in our example `my-company.example.com` is shared by both URLs.
 
-Hint: I have also added `cookie_secure` to this example even so you won't needed as I have assumed you are exposing Kong using `https`. Only wanted to have it here in case you are exposing it with `http` only.
+Hint: I have also added `cookie_secure` to this example even so you won't need it as I have assumed you are exposing Kong using `https`. Only wanted to have it here in case you are exposing Kong with `http` only.
 
 ## Developer Portal
 
-Now that we have learned a lot about major principles for this API based user interfaces we can be very quick with the [developer portal](https://docs.konghq.com/enterprise/2.3.x/developer-portal/) as it shares the accepts same principles (a web based user interface and an API) so we have to do similar things to get this to work:
+Now that we have learned a lot about major principles for those API based user interfaces we can be very quick with the [developer portal](https://docs.konghq.com/enterprise/2.3.x/developer-portal/) as it shares the accept same principles (a web based user interface and an API) so we have to do similar things to get this to work:
 
 ```config
 portal_gui_protocol = https

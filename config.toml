@@ -18,7 +18,7 @@ pygmentsStyle = "solarized-dark"
         SvenWal is my nick since the 90s.
         Find here all my social media stufff as well as my new primary blog.
     """
-    publicationYear = "2020"
+    publicationYear = "2021"
     listPageDateFormat = "January 2006" # See https://gohugo.io/functions/format/
     singlePageDateFormat = "January 2, 2006"
 
