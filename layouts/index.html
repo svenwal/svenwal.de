@@ -21,7 +21,7 @@
         <nav>
           <ul>
             {{ range .Site.Menus.main }}
-            <li><a href="{{ .URL }}" aria-label="{{ .Identifier }}">{{ .Pre }}</a></li>
+            <li><a title="{{ .Name }}" href="{{ .URL }}" aria-label="{{ .Identifier }}">{{ .Pre }}</a></li>
             {{ end }}
           </ul>
         </nav>

@@ -33,7 +33,7 @@ pygmentsStyle = "solarized-dark"
 
 [[menu.main]]
     name = "Blog"
-    pre = "<i class='fas fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
+    pre = "<i class='fas fa-blog fa-lg'></i>" #Choose your favorite font from Font Awesome
     url = "/blog/"
     weight = 10
 
