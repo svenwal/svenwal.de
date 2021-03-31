@@ -101,7 +101,7 @@ Now that we have learned a lot about major principles for those API based user i
 portal_gui_protocol = https
 portal_gui_host = kong-portal.my-company.example.com
 portal_api_url = https://kong-portal-api.my-company.example.com
-kong_portal_session_conf = {"cookie_name":"portal_session","secret":"another-random-secret","cookie_secure":false,"cookie_domain":"my-company.example.com"} 
+portal_session_conf = {"cookie_name":"portal_session","secret":"another-random-secret","cookie_secure":false,"cookie_domain":"my-company.example.com"} 
 ```
 
 or (if you are using environment variables)
