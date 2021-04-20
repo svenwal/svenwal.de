@@ -112,3 +112,5 @@ KONG_PORTAL_GUI_HOST = kong-portal.my-company.example.com
 KONG_PORTAL_API_URL = https://kong-portal-api.my-company.example.com
 KONG_PORTAL_SESSION_CONF = {"cookie_name":"portal_session","secret":"another-random-secret","cookie_secure":false,"cookie_domain":"my-company.example.com"} 
 ```
+
+Note on the session conf: if using [OpenID Connect](https://docs.konghq.com/hub/kong-inc/openid-connect/) this setting is not needed, instead check the [config.session_cookie_domain](https://docs.konghq.com/hub/kong-inc/openid-connect/#configsession_cookie_domain) of the OIDC plugin (in our example it would be `config.session_cookie_domain=my-company.example.com`)
