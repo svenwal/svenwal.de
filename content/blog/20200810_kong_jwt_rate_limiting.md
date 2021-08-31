@@ -64,11 +64,11 @@ Within this section, one can find all of the options that Kong's plugin offers. 
  
 Still, there is one very interesting parameter in there - which is the option to use a header. If we would only happen to have a unique header per end-user, then everything would  work fine...mmm...
  
-Drum roll...
+🥁 Drum roll...
  
 Luckily, it turns out the OpenID Connect plugin provides the option to extract any claim(s) from the token and create headers based on that value.
  
-The configuration parameters, [config.upstream_headers_claims] (https://docs.konghq.com/hub/kong-inc/openid-connect/#configupstream_headers_claims) and [config.upstream_headers_names](https://docs.konghq.com/hub/kong-inc/openid-connect/#configupstream_headers_names) can help us accomplish what we need for our use case. The first will describe which claim(s) we want to export (as a comma-separated array) and the latter, defines how the name(s) of the created header(s) shall be.
+The configuration parameters, [config.upstream_headers_claims](https://docs.konghq.com/hub/kong-inc/openid-connect/#configupstream_headers_claims) and [config.upstream_headers_names](https://docs.konghq.com/hub/kong-inc/openid-connect/#configupstream_headers_names) can help us accomplish what we need for our use case. The first will describe which claim(s) we want to export (as a comma-separated array) and the latter, defines how the name(s) of the created header(s) shall be.
  
 If you now have a closer look at the Open ID Connect plugin configuration we have applied earlier in this blog post, you will notice I already placed those settings in:
  
