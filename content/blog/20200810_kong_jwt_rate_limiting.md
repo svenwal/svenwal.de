@@ -138,7 +138,7 @@ Well, the first observation to realize is that this per-consumer counter needs t
  
 The above scenario works very well if all end-users have the same limit, but individual counters. And having such a default is what you typically want for the majority of your users.
  
-So remember that we set the OpenID Connect plugin for the consumer being optional? The key word here is **"optional"**. This means that we still need to create one!
+So remember that we set the OpenID Connect plugin for the consumer being optional? The key word here is **"optional"**. This means that we still can create one for the exceptions!
  
 ``` bash
      config.consumer_optional=true
