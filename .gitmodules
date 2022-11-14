@@ -1,0 +1,3 @@
+[submodule "themes/pulp-solarized"]
+	path = themes/pulp-solarized
+	url = https://github.com/svenwal/pulp-solarized.git
