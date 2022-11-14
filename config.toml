@@ -18,7 +18,7 @@ pygmentsStyle = "solarized-dark"
         SvenWal is my nick since the 90s.
         Find here all my social media stufff as well as my primary blog.
     """
-    publicationYear = "2021"
+    publicationYear = "2022"
     listPageDateFormat = "January 2006" # See https://gohugo.io/functions/format/
     singlePageDateFormat = "January 2, 2006"
 
@@ -36,6 +36,12 @@ pygmentsStyle = "solarized-dark"
     pre = "<i class='fas fa-blog fa-lg'></i>" #Choose your favorite font from Font Awesome
     url = "/blog/"
     weight = 10
+
+[[menu.main]]
+    name = "Mastodon"
+    pre = "<i class='fab fa-mastodon fa-lg'></i>"
+    url = "https://mastodon.cloud/@svenwal"
+    weight = 20
 
 [[menu.main]]
     name = "Twitter"
