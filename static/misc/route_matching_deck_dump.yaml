@@ -1,0 +1,90 @@
+_format_version: "1.1"
+services:
+- connect_timeout: 60000
+  host: httpbin.org
+  name: service1
+  path: /anything
+  port: 80
+  protocol: http
+  read_timeout: 60000
+  retries: 5
+  routes:
+  - https_redirect_status_code: 426
+    name: httpbin
+    path_handling: v0
+    paths:
+    - /myService
+    preserve_host: false
+    protocols:
+    - http
+    - https
+    regex_priority: 0
+    request_buffering: true
+    response_buffering: true
+    strip_path: true
+  - https_redirect_status_code: 426
+    methods:
+    - POST
+    name: post
+    path_handling: v0
+    paths:
+    - /myService/posts
+    preserve_host: false
+    protocols:
+    - http
+    - https
+    regex_priority: 0
+    request_buffering: true
+    response_buffering: true
+    strip_path: true
+  write_timeout: 60000
+- connect_timeout: 60000
+  host: jsonplaceholder.typicode.com
+  name: service2
+  path: /posts
+  port: 443
+  protocol: https
+  read_timeout: 60000
+  retries: 5
+  routes:
+  - https_redirect_status_code: 426
+    name: jsonplaceholder
+    path_handling: v0
+    paths:
+    - /myService/posts
+    preserve_host: false
+    protocols:
+    - http
+    - https
+    regex_priority: 0
+    request_buffering: true
+    response_buffering: true
+    strip_path: true
+  - https_redirect_status_code: 426
+    methods:
+    - PATCH
+    name: regexp
+    path_handling: v0
+    paths:
+    - /(de|en)/myService/posts/(?<post_id>[0-9]{2})$
+    plugins:
+    - config:
+        host: null
+        path: /posts/$["uri_captures.post_id-name"])
+        port: null
+      enabled: true
+      name: route-transformer-advanced
+      protocols:
+      - grpc
+      - grpcs
+      - http
+      - https
+    preserve_host: false
+    protocols:
+    - http
+    - https
+    regex_priority: 0
+    request_buffering: true
+    response_buffering: true
+    strip_path: true
+  write_timeout: 60000

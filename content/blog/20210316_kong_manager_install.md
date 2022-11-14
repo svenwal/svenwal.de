@@ -93,6 +93,8 @@ The important part here is in `cookie_domain` which needs to be set to the subdo
 
 Hint: I have also added `cookie_secure` to this example even so you won't need it as I have assumed you are exposing Kong using `https`. Only wanted to have it here in case you are exposing Kong with `http` only.
 
+> :bulb: there are certain domains - especially those from cloud providers (for example .amazonaws.com) - which are blocked within the browsers for cookies! See [this post on StackOverflow](https://stackoverflow.com/questions/43520667/cookies-are-not-being-set-for-amazonaws-com-in-chrome-57-and-58-browsers) if you encounter problems with your cookies
+
 ## Developer Portal
 
 Now that we have learned a lot about major principles for those API based user interfaces we can be very quick with the [developer portal](https://docs.konghq.com/enterprise/2.3.x/developer-portal/) as it shares the accept same principles (a web based user interface and an API) so we have to do similar things to get this to work:
@@ -114,3 +116,5 @@ KONG_PORTAL_SESSION_CONF = {"cookie_name":"portal_session","secret":"another-ran
 ```
 
 Note on the session conf: if using [OpenID Connect](https://docs.konghq.com/hub/kong-inc/openid-connect/) this setting is not needed, instead check the [config.session_cookie_domain](https://docs.konghq.com/hub/kong-inc/openid-connect/#configsession_cookie_domain) of the OIDC plugin (in our example it would be `config.session_cookie_domain=my-company.example.com`)
+
+> :bulb: there are certain domains - especially those from cloud providers (for example .amazonaws.com) - which are blocked within the browsers for cookies! See [this post on StackOverflow](https://stackoverflow.com/questions/43520667/cookies-are-not-being-set-for-amazonaws-com-in-chrome-57-and-58-browsers) if you encounter problems with your cookies
