@@ -103,6 +103,8 @@ networks:
       name: vpn
 ```
 
+![Pi-hole overview](/img/pi-hole.png)
+
 ## Conclusion
 
 The move from the dedicated server to the Oracle Cloud was extremely easy - thanks to Docker and the mounted configuration directories I only needed to copy those folders, open the firewall and done.
