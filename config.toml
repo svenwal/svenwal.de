@@ -46,7 +46,7 @@ pygmentsStyle = "solarized-dark"
 [[menu.main]]
     name = "Twitter"
     pre = "<i class='fab fa-twitter fa-lg'></i>"
-    url = "https://twitter.com/svenwal"
+    url = "/twitter"
     weight = 20
 
 [[menu.main]]
