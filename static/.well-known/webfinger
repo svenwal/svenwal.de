@@ -1,0 +1,23 @@
+{
+    "subject": "acct:svenwal@mastodon.cloud",
+    "aliases": [
+      "https://mastodon.cloud/@svenwal",
+      "https://mastodon.cloud/users/svenwal"
+    ],
+    "links": [
+       {
+        "rel": "http://webfinger.net/rel/profile-page",
+        "type": "text/html",
+        "href": "https://mastodon.cloud/@svenwal"
+      },
+      {
+        "rel": "self",
+        "type": "application/activity+json",
+        "href": "https://mastodon.cloud/users/svenwal"
+      },
+      {
+        "rel": "http://ostatus.org/schema/1.0/subscribe",
+        "template": "https://mastodon.cloud/authorize_interaction?uri={uri}"
+      }
+    ]
+  }
