@@ -4,7 +4,7 @@ date: 2023-04-04
 draft: false
 tags: [
    "Kong",
-   "Kong Enterprise"
+   "Kong Enterprise",
    "Disaster Recovery"
 ]
 ---
