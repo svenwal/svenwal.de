@@ -52,7 +52,7 @@ With [decK](https://docs.konghq.com/deck/latest/) (declarative configuration of 
 deck dump --all-workspaces
 ```
 
-(`-all-workspaces` only needed on Kong Enterprise) as open source has no RBAC)
+(`-all-workspaces` only needed on Kong Enterprise as open source has no RBAC)
 
 This will create a folder structure with all the configuration files. Now you can simply [apply those files to your new instance of Kong](https://docs.konghq.com/deck/latest/reference/deck_sync/):
 
