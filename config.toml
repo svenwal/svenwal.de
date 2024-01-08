@@ -27,6 +27,9 @@ pygmentsStyle = "solarized-dark"
     # custom_css = ["/css/custom.css"]
     # custom_js = ["/js/custom.js"]
 
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
+
 [outputs]
     section = ["JSON", "HTML"]
     #taxonomy = ["JSON", "HTML"]
