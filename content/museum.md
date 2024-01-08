@@ -4,7 +4,7 @@ date: 2024-01-07T14:18:04+02:00
 draft: false
 ---
 
-# Museum
+This is the small computer museum I have installed in my home office. You can hover on the image to see the different items. Click on the image to see the details of each item.
 
 <img style="max-width: 800px; min-width: 800px" src="/img/museum.jpeg" alt="Workplace" usemap="#workmap" />
 
