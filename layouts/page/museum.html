@@ -1,0 +1,86 @@
+{{ define "main"}}
+  <h1>{{ .Params.title }}</h1>
+  {{ partial "header.html" . }}
+  <!-- date -->
+  {{ $singlePageDateFormat := .Site.Params.singlePageDateFormat | default "January 2, 2006"}}
+  <!-- tags -->
+  <div id="tags">
+    <ul>
+      {{ range .Param "tags" }}
+        {{ $name := . }}
+        {{ with $.Site.GetPage (printf "/tags/%s" ($name | urlize)) }}
+          <li><a href="{{ .Permalink }}">{{ $name }}</a></li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+  <!-- content -->
+  <div id="contentBody">
+    <div class="museum-details">
+      <div class="museum-text">  
+        {{ .Content }}
+      </div>
+      <div class="museum-table">
+        <table class="museum-details">
+          <tr>
+            <th colspan="2">{{ .Params.title }}</th>
+          </tr>
+          {{ if .Params.photo }}
+          <tr>
+            <td  colspan="2" class="photo"><img src="{{ .Params.photo }}" /></td>
+          </tr>
+          {{ end }}
+          {{ if .Params.logo }}
+          <tr>
+            <td colspan="2" class="logo"><img src="{{ .Params.logo }}" /></td>
+          </tr>
+          {{ end }}
+          {{ if .Params.manufacturer }}
+          <tr>
+            <td>Manufacturer</td>
+            <td>{{ .Params.manufacturer }}</td>
+          </tr>
+          {{ end }} 
+          {{ if .Params.year }}
+          <tr>
+            <td>Year</td>
+            <td>{{ .Params.year }}</td>
+          </tr>
+        {{ end }}
+        {{ if .Params.links }}
+          <tr>
+            <td>Links</td>
+            <td>
+              <ul>
+                {{ range .Params.links }}
+                <li><a href="{{ .url }}">{{ .title }}</a></li>
+              {{ end }}
+              </ul>
+            </td>
+          </tr>
+        {{ end }}
+        {{ if .Params.state }}
+          <tr>
+            <td>State</td>
+            <td>{{ .Params.state }}</td>
+          </tr>
+        {{ end }}
+        {{ if .Params.additions }}
+          <tr>
+            <td>Additions</td>
+            <td>
+              <ul>
+                {{ range .Params.Additions }}
+                <li><a href="{{ .url }}">{{ .title }}</a></li>
+              {{ end }}
+              </ul>
+            </td>
+          </tr>
+        {{ end }}
+        </table>
+      </div>
+    </div>
+ 
+  </div>
+  {{ partial "footer.html" . }}
+{{ end }}

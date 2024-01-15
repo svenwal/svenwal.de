@@ -1,23 +1,28 @@
-.author {
-    color: #C39F59;
-}
 
-header a.author:link {
-    color: #C39F59;
-}
-
-header a.author:visited {
-    color: #C39F59;
-}
-
-header a.author:hover {
-    color: #C39F59;
-}
-
-header a.author:active {
-    color: #C39F59;
-}
 
 .date {
     color: #869D38;
 }
+
+table.museum-details > tr  > th {
+    font-weight: bold;
+}
+
+.museum-text {
+    float: left;
+    width: 50%;
+  }
+
+  .museum-table {
+    float: left;
+    width: 50%;
+    min-width: 300px;
+    max-width: 400px;;
+  }
+  
+  /* Clear floats after the columns */
+  div.museum-details:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
