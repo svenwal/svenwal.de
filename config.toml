@@ -24,7 +24,7 @@ pygmentsStyle = "solarized-dark"
 
     enableEmoji = true
 
-    # custom_css = ["/css/custom.css"]
+    custom_css = ["/css/custom.css"]
     # custom_js = ["/js/custom.js"]
 
 [markup.goldmark.renderer]
