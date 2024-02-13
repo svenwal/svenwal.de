@@ -17,11 +17,11 @@ This is the small computer museum I have installed in my home office. You can ho
   <area shape="rect" coords="110,566,218,680" alt="DJI Phantom 3" title="DJI Phantom 3" href="/museum-details/phantom3/">
   <area shape="rect" coords="239,167,358,224" alt="Commodore C64" title="Commodore C64" href="/museum-details/c64/">
   <area shape="rect" coords="367,195,428,221" alt="Commodore 1541" title="Commodore 1541" href="/museum-details/1541/">
-  <area shape="rect" coords="260,235,382,336" alt="Commodore 1084S" title="Commodore 1084S" href="/museum-details/1084S/">
+  <area shape="rect" coords="260,235,382,336" alt="Commodore 1084S" title="Commodore 1084S" href="/museum-details/1084s/">
   <area shape="rect" coords="257,346,395,413" alt="Commodore Amiga 500" title="Commodore Amiga 500" href="/museum-details/amiga500/">
   <!-- TBD phones-->
   <area shape="rect" coords="235,422,428,475" alt="Mobile phones" title="Mobile phones" href="/museum-details/phones/">
-  <area shape="rect" coords="278,485,425,700" alt="Commodore Amiga 3000T/UX" title="Commodore Amiga 3000T/UX" href="/museum-details/amiga3000TUX/">
+  <area shape="rect" coords="278,485,425,700" alt="Commodore Amiga 3000T/UX" title="Commodore Amiga 3000T/UX" href="/museum-details/amiga3000tux/">
   <area shape="rect" coords="450,162,560,224" alt="Star LC-10" title="Star LC-10" href="/museum-details/starlc10/">
   <area shape="rect" coords="448,235,565,353" alt="Apple ][ europlus" title="Apple ][ europlus" href="/museum-details/apple2europlus/">
   <area shape="rect" coords="448,373,585,428" alt="SPARCstation 5" title="SPARCstation 5" href="/museum-details/sparcstation5/">
