@@ -26,3 +26,16 @@ table.museum-details > tr  > th {
     display: table;
     clear: both;
   }
+
+  @font-face {
+    font-family: 'Aller';
+    src: url('/fonts/Aller.woff') 
+         format('woff')
+   }
+  .system-serif {
+    font-family: aller;
+  }
+
+  body {
+    font-family: 'Aller', sans-serif !important;
+  }
