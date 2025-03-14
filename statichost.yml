@@ -1,0 +1,6 @@
+image: hugomods/hugo:ci-0.145.0
+command: hugo
+public: public
+domains:
+  - svenwal.de
+  - svenwal.eu
