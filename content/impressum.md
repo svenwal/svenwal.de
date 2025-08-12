@@ -4,10 +4,10 @@ date: 2019-04-10T14:18:04+02:00
 draft: false
 ---
 Sven Walther  
-Altglienicker Ring 4  
-15806 Zossen
+Bodelschwinghstraße 21  
+15831 Mahlow
 
-Tel.: +49 3377 2028554  
+Tel.: +49 176 80727576  
 E-Mail: <sven@walther.world>  
 Internet: <https://cv.walther.world>  
 Twitter: @SvenWal
